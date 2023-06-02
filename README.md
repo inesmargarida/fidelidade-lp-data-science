@@ -2,34 +2,46 @@
 
 Welcome to Fidelidade Data Science Learning Pod!
 
-Here is you'll find all information needed to setup your environment and the
-workflow you'll use during the academy.
+## Suggested learning calendar
 
-1. [Initial Setup](#initial-setup)
-    1. [Windows Setup](#Windows-Setup)
-    1. [MacOS Setup](#MacOS-Setup)
-    1. [Ubuntu Setup](#Ubuntu-Setup)
-    1. [Setup for all Operating Systems](#Setup-for-all-Operating-Systems)
-    1. [Setup Git and GitHub](#Setup-Git-and-GitHub)
-    1. [Setup your Workspace Repository](#setup-your-workspace-repository)
-    1. [Get the Learning Material](#get-the-learning-material)
-1. [Learning Unit Workflow](#learning-unit-workflow)
-1. [Updates to Learning Units](#updates-to-learning-units)
-1. [Help](#help)
-    1. [Learning Unit](#learning-unit-workflow)
-    1. [Troubleshooting](#Troubleshooting)
-    1. [Other](#other)
+> **Note**: This is just a suggestion. Groups are encouraged to set their own deadlines with their mentors.
+
+Week 01 _(~3.5 hours)_
+
+- Discover Module01 SLU's Units.
+- Pick contents that you've had the least exposure so far, read notebooks and run cells.
+
+Week 02 _(~3.5 hours)_
+
+- Select 2/3 SLU's to practice your coding skills, completing the `Exercise notebook.ipynb`
+
+
+Week 03 _(~4 hours)_
+
+- Data Workflows.
+- Combining DataFrames.
+- Advanced Pipelines.
+- Complete exercises from `Exercise notebook.ipynb`
+
+Week 04 _(~4 hours)_
+
+- Time Series Baseline.
+- Classic Time Series.
+- ML Timeseries Models
+- Complete exercises from BLU's
+
+Week 05 _(~5 hours)_
+
+- Final Project
+
+Week 06 _(~5 hours)_
+
+- Final Project
+
 
 ## Initial Setup
 
 #### Creating a Python Virtual Environment
-
-Bellow are the instructions that are enough to get the setup done and get you up and running :)
-You can also follow [this guide](guides/How_to_set_up_python_virtual_environments.md) for a more in depth set of instructions that accomplish exactly the same thing.
-
-You should always be using a virtual environment to install python packages. We'll use _venv_ to set them up.
-
-To install and update packages, we'll be using _pip_ which is the reference Python package manager.
 
 ##### Start by installing ensuring pip, setuptools, and wheel are up to date:
 
@@ -37,51 +49,37 @@ To install and update packages, we'll be using _pip_ which is the reference Pyth
 python3 -m pip install --user --upgrade pip setuptools wheel
 ```
 
-* Create a virtual environment with the name `slu00`
+* Create a virtual environment with the name `module1`
 
 ```
-python3 -m venv ~/.virtualenvs/slu00
+python3 -m venv ~/.virtualenvs/module1
 ```
 
 * Activate the environment
 
 ```
-.virtualenvs/slu00/bin/activate
+.virtualenvs/module1/bin/activate
 ```
 
 >Note: after you activate your virtual environment you should see at the leftmost of your command line the name of your virtual environment surrounded by parenthesis, like this:
 
 ```
-mig@my-machine % .virtualenvs/slu00/bin/activate
-(slu00) mig@my-machine %
+mig@my-machine % .virtualenvs/module1/bin/activate
+(module1) mig@my-machine %
 ```
 
 And you're able to make sure your virtual environment is active using the `which` command (it outputs the location of your virtual environment's python installation):
 
 ```
-(slu00) mig@my-machine % which python
-/Users/mig/.virtualenvs/slu00/bin/python
+(module1) mig@my-machine % which python
+/Users/mig/.virtualenvs/module1/bin/python
 ```
 
 Now update pip.
 
 ```
-(slu00) pip install -U pip
+(module1) pip install -U pip
 ```
-
-### Setup Git and GitHub
-
-Having a _GitHub_ account and knowing the basics of committing and pushing
-changes are mandatory.
-By the end of this setup you will have accomplished both.
-Complete the following steps:
-
-1. [Sign up](https://github.com/join) for a _GitHub_ account if you don't
-already have one.
-1. [Checking for existing SSH keys](https://help.github.com/en/github/authenticating-to-github/checking-for-existing-ssh-keys)
-1. [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-1. [Adding a new SSH key to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
-1. [Testing your SSH connection](https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection)
 
 ### Setup your Workspace Repository
 
@@ -125,7 +123,7 @@ It's used to give instructors guidelines to produce the learning units.
 We are also using it to ensure that you are able to run and submit a learning
 unit.
 
-So go ahead and copy the sample directory `sample/SLU00 - LU Tutorial` from the `fidelidade-lp-data-science` repository to your repository (named `fidelidade-lp-data-science`).
+So go ahead and copy the sample directory `sample/module1 - LU Tutorial` from the `fidelidade-lp-data-science` repository to your repository (named `fidelidade-lp-data-science`).
 ![Sample learning unit](assets/sample_learning_unit.png "Sample learning unit")
 
 The grader only requires you to have the contents in a directory starting with
@@ -160,14 +158,14 @@ So let's start the Jupyter Notebook app:
 1. Activate your virtual environment
 
     ```
-    .virtualenvs/slu00/bin/activate
+    .virtualenvs/module1/bin/activate
     ```
 
 1. Enter the Learning unit directory in your workspace directory (`fidelidade-lp-data-science`).
     >Note: It is **VERY IMPORTANT** that you **ALWAYS** work on the files on your `fidelidade-lp-data-science` repository, and **NEVER** work on files that are in your `fidelidade-lp-data-science` repository!
 
     ```
-    cd ~/projects/batch4-workspace/sample/"SLU00 - LU Tutorial"
+    cd ~/projects/batch4-workspace/sample/"module1 - LU Tutorial"
     ```
 
 1. Installing the necessary packages
